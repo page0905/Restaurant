@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Restaurant/static/css/main.792fbbc3.css",
+    "main.js": "/Restaurant/static/js/main.8273febc.js",
+    "static/media/ramen.jpg": "/Restaurant/static/media/ramen.e66c62a51ac052e016da.jpg",
+    "static/media/tempura.jpg": "/Restaurant/static/media/tempura.4ef7a9bad034023f70af.jpg",
+    "static/media/sushi.jpg": "/Restaurant/static/media/sushi.e6e06c743c21addbf84e.jpg",
+    "static/media/background.jpg": "/Restaurant/static/media/background.7b6d4105152e63e6b7c4.jpg",
+    "static/media/look.jpg": "/Restaurant/static/media/look.d761f266c499d51549cb.jpg",
+    "static/media/matcha.jpg": "/Restaurant/static/media/matcha.ddddde3d81a85556008b.jpg",
+    "static/media/cold_drink.jpg": "/Restaurant/static/media/cold_drink.afb81871731711f960db.jpg",
+    "static/media/junmai_sake.jpg": "/Restaurant/static/media/junmai_sake.8fbb11080edaa0033e42.jpg",
+    "static/media/look1.jpg": "/Restaurant/static/media/look1.18396cbe96d1fa2e3bc7.jpg",
+    "static/media/look3.jpg": "/Restaurant/static/media/look3.2181000ab1ee569f90b3.jpg",
+    "static/media/sake_mojito.jpg": "/Restaurant/static/media/sake_mojito.4e28902a2755df815ddf.jpg",
+    "static/media/look2.jpg": "/Restaurant/static/media/look2.80b69c632e24c84479fd.jpg",
+    "static/media/unagi.jpg": "/Restaurant/static/media/unagi.5029e89312d955cca784.jpg",
+    "static/media/takoyaki.jpg": "/Restaurant/static/media/takoyaki.02e0d2a92945de653877.jpg",
+    "static/media/salmon.jpg": "/Restaurant/static/media/salmon.10330de997dd89d10151.jpg",
+    "static/media/sakura_cocktail.jpg": "/Restaurant/static/media/sakura_cocktail.e09c58d4ddb32d6dda93.jpg",
+    "static/media/capuccino.jpg": "/Restaurant/static/media/capuccino.4e40078d467436c9bcf4.jpg",
+    "index.html": "/Restaurant/index.html",
+    "main.792fbbc3.css.map": "/Restaurant/static/css/main.792fbbc3.css.map",
+    "main.8273febc.js.map": "/Restaurant/static/js/main.8273febc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.792fbbc3.css",
+    "static/js/main.8273febc.js"
+  ]
+}
