@@ -10,7 +10,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
 import Booking from "./components/Booking/Booking";
 import Footer from "./components/Footer/Footer";
-import './App.css';
+import "./App.css";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
       mirror: false,
     });
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/Restaurant">
         <ScrollToTop />
         <Header />
         <Routes>
@@ -43,7 +43,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/booking" element={<Booking  />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
         <Footer />
       </BrowserRouter>

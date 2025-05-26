@@ -2,21 +2,23 @@
   "name": "restaurant",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "/",
+  "homepage": "https://page0905.github.io/Restaurant/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "preview": "serve -s build"
+    "preview": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mip14395/Restaurant.git"
+    "url": "git+https://github.com/page0905/Restaurant.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mip14395/Restaurant/issues"
+    "url": "https://github.com/page0905/Restaurant/issues"
   },
   "description": "",
   "dependencies": {
@@ -31,6 +33,7 @@
     "swiper": "^11.2.8"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "react-scripts": "^5.0.1",
     "serve": "^14.2.4"
   },
