@@ -1,0 +1,33 @@
+.footerTop {
+  padding: 40px 0;
+}
+
+.socialLinks a {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 10px;
+}
+
+.footerLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.borderedBox {
+  align-items: center;
+  border-top: 1px solid #76abad;
+  border-bottom: 1px solid #76abad;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+
+

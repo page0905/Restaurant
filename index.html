@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
     <title>MSC Restaurant</title>
-
     <link href="#" rel="icon" />
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -15,7 +13,6 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,59 +27,57 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <link href="assets/css/style.css" rel="stylesheet" />
-    <!--Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-     <!-- ======= Header & Navigation ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <a href="#" class="logo me-auto me-lg-0"><img src="" alt="" /></a>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+            <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <a
+          href="#book-a-table"
+          class="book-a-table-btn scrollto d-none d-lg-flex"
+          >Book a table</a
+        >
+      </div>
+    </header>
 
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
-      <a href="#" class="logo me-auto me-lg-0"><img src="" alt=""></a>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
-
-    </div>
-  </header>
     <main id="main">
-      <!-- ======= Home Section ======= -->
-      <section id="hero"
-      class="d-flex align-items-center">
+      <section id="hero" class="d-flex align-items-center">
         <div
           class="container position-relative text-center text-lg-start"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div class="row">
-            <div class="col-lg-8">
+          <div class="row justify-content-end">
+            <div class="col-lg-8 text-lg-end">
               <h1>Welcome to <span>MSC Restaurant</span></h1>
-
               <h2>
-                "Where culinary excellence meets modern elegance, delivering a refined and upscale dining experience."
+                "Where culinary excellence meets modern elegance, delivering a
+                refined and upscale dining experience."
               </h2>
-
               <div class="btns">
                 <a href="#menu" class="btn-menu animated fadeInUp scrollto"
                   >Our Menu</a
                 >
-
                 <a
                   href="#book-a-table"
                   class="btn-book animated fadeInUp scrollto"
@@ -93,634 +88,779 @@
           </div>
         </div>
       </section>
-      
-      <!-- ======= About Section ======= --> 
 
-    <section id="about" class="about"> 
-
-      <div class="container" data-aos="fade-up"> 
-
-        <div class="section-title"> 
-
-          <h3>About</h3> 
-
-          <p>About Us</p> 
-
-        </div> 
-
-        <div class="row gy-4"> 
-
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(/assets/vendor/picture/res3.png);" 
-
-            data-aos="fade-up" data-aos-delay="150"> 
-
-            <div class="call-us position-absolute"> 
-
-              <h2>About Restaurant</h2> 
-
-            </div> 
-
-          </div> 
-
-          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300" 
-
-            style="background-color:#76abae; color:white;"> 
-
-            <div class="content ps-0 ps-lg-5"> 
-
-              <p style="font-size: 18px;
-                        padding: 10px;
-                        text-align: justify;
-                        margin: revert;
-                        position: relative;
-                        left: -20px;"> 
-
-                MSC Restaurant is a sophisticated dining destination where modern elegance blends seamlessly with culinary artistry. With a meticulously curated menu featuring premium ingredients and innovative flavors, we offer a unique gastronomic experience. Our stylish ambiance, inspired by a sleek and contemporary design, creates the perfect setting for intimate dinners, business meetings, and special celebrations. At MSC Restaurant, every dish is crafted with passion, ensuring an unforgettable journey for every guest. 
-
-              </p> 
-
-            </div> 
-
-          </div> 
-
-          <hr> 
-
-          <div class="row gy-4"> 
-
-            <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300" 
-
-              style="background-color:#76abae; color:white;"> 
-
-              <div class="content ps-0 ps-lg-5"> 
-
-                <p style="font-size: 18px;
-                padding: 10px;
-                text-align: justify;
-                margin: revert;
-                position: relative;
-                left: -20px;"> 
-
-                  MSC Restaurant was founded with a vision to redefine modern dining by combining exquisite flavors with contemporary elegance. From its inception, it has been dedicated to delivering a refined culinary experience, emphasizing high-quality ingredients and innovative presentation. Over the years, MSC Restaurant has grown into a renowned destination for food lovers, known for its sophisticated ambiance, exceptional service, and commitment to gastronomic excellence.
-                </p> 
-
-              </div> 
-
-            </div> 
-
-            <div class="col-lg-7 position-relative about-img" style="background-image: url(https://images.unsplash.com/photo-1599795119678-63f52d65a5d9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;" 
-
-              data-aos="fade-up" data-aos-delay="150"> 
-
-              <div class="call-us position-absolute"> 
-
-                <h2>Our History</h2> 
-
-              </div> 
-
-            </div> 
-
-          </div> 
-
-          <hr> 
-
-          <div class="col-lg-4 position-relative about-img" style="background-image: url(https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);" 
-
-            data-aos="fade-up" data-aos-delay="150"> 
-
-            <div class="call-us position-absolute"> 
-
-              <h2>Specific</h2> 
-
-            </div> 
-
-          </div> 
-
-          <div class="col-lg-4 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300" 
-
-            style="background-color:#76abae; color:white;"> 
-
-            <div class="content ps-0 ps-lg-5"> 
-
-              <p style="font-size: 18px;
-              padding: 10px;
-              text-align: justify;
-              margin: revert;
-              position: relative;
-              left: -20px;"> 
-
-                MSC Restaurant offers a refined selection of signature delicacies, from Seared Wagyu Steak with truffle mashed potatoes to Butter Garlic Lobster paired with herb-seasoned asparagus. Indulge in the creamy Truffle Mushroom Risotto or the Pan-Seared Salmon with Citrus Glaze for a fresh, flavorful experience. End your meal with our Signature MSC Dessert Platter, featuring handcrafted sweets like chocolate lava cake and tiramisu. Each dish is crafted to perfection, delivering an unforgettable dining experience.
-
-              </p> 
-
-            </div> 
-
-          </div> 
-
-          <div class="col-lg-4 position-relative about-img" style="background-image: url(https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);" 
-
-            data-aos="fade-up" data-aos-delay="150"> 
-
-            <div class="call-us position-absolute"> 
-
-              <h2>Delicacies</h2> 
-
-            </div> 
-
-          </div> 
-
-        </div> 
-
-      </div> 
-
-      </div> 
-
-    </section> 
-    <!-- ======= Menu Section ======= -->
-
-    <section id="menu" class="menu">
-
-      <div class="container" data-aos="fade-up">
-
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
-
-              <h3>Menu</h3>
-
-              <p>Check our tasty <span>Menu</span></p>
-
+            <h3>About</h3>
+            <p>About Us</p>
           </div>
+          <div class="row gy-4">
+            <div
+              class="col-lg-7 position-relative about-img"
+              style="background-image: url('/assets/image/look.jpg')"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div class="call-us position-absolute">
+                <h2>About Restaurant</h2>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 d-flex align-items-end"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              style="background-color: #76abae; color: white"
+            >
+              <div class="content ps-0 ps-lg-5">
+                <p
+                  style="
+                    font-size: 18px;
+                    padding: 10px;
+                    text-align: justify;
+                    margin: revert;
+                    position: relative;
+                    left: -20px;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis veritatis assumenda placeat, hic maxime
+                  exercitationem ratione soluta doloremque odit possimus eum!
+                  Esse quaerat nam mollitia nulla optio debitis laboriosam
+                  nobis. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Nobis beatae in deleniti veritatis. Atque tempore
+                  exercitationem laudantium aspernatur explicabo voluptas
+                  inventore, non necessitatibus sunt. Vel cum laborum molestiae
+                  voluptatibus similique.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row gy-4">
+              <div
+                class="col-lg-5 d-flex align-items-end"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                style="background-color: #76abae; color: white"
+              >
+                <div class="content ps-0 ps-lg-5">
+                  <p
+                    style="
+                      font-size: 18px;
+                      padding: 10px;
+                      text-align: justify;
+                      margin: revert;
+                      position: relative;
+                      left: -20px;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde ab tenetur nesciunt quibusdam placeat id harum
+                    voluptate veritatis sed minus. Accusantium ad corrupti
+                    soluta tempora nesciunt in aspernatur ducimus autem. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Dolor at
+                    qui sunt, reiciendis facilis velit quam illum iure ullam
+                    minima laborum error enim laudantium voluptates omnis illo
+                    molestiae ipsam dignissimos.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-lg-7 position-relative about-img"
+                style="background-image: url('/assets/image/look2.jpg')"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <div class="call-us position-absolute">
+                  <h2>Our History</h2>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div
+              class="col-lg-4 position-relative about-img"
+              style="background-image: url('/assets/image/look1.jpg')"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div class="call-us position-absolute">
+                <h2>Specific</h2>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-end"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              style="background-color: #76abae; color: white"
+            >
+              <div class="content ps-0 ps-lg-5">
+                <p
+                  style="
+                    font-size: 18px;
+                    padding: 10px;
+                    text-align: justify;
+                    margin: revert;
+                    position: relative;
+                    left: -20px;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  quos enim, ullam inventore nobis aliquam sed ipsam cupiditate
+                  provident ad cum corrupti, exercitationem labore rerum itaque
+                  minima sequi, facere laboriosam. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ratione culpa consectetur vero
+                  ad doloremque soluta odit exercitationem quas rerum tempore
+                  aut, perspiciatis omnis repellendus enim ducimus laborum nam
+                  nulla? Odit.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 position-relative about-img"
+              style="background-image: url('/assets/image/look5.jpg')"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div class="call-us position-absolute">
+                <h2>Delicacies</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      </div>
-
-      <div class="container mt-5">
-
-          <ul class="nav nav-tabs custom-tabs flex-column flex-sm-row justify-content-center" id="galleryTabs"
-              role="tablist">
-
-              <li class="nav-item">
-
-                  <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
-                      aria-selected="true">Show All</a>
-
-              </li>
-
-              <li class="nav-item">
-
-                  <a class="nav-link" id="beverages-tab" data-toggle="tab" href="#beverages" role="tab"
-                      aria-controls="beverages" aria-selected="false">Beverages</a>
-
-              </li>
-
-              <li class="nav-item">
-
-                  <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab" aria-controls="lunch"
-                      aria-selected="false">Lunch</a>
-
-              </li>
-
-              <li class="nav-item">
-
-                  <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab" aria-controls="dinner"
-                      aria-selected="false">Dinner</a>
-
-              </li>
-
+      <section id="menu" class="menu">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3>Menu</h3>
+            <p>Check our tasty <span>Menu</span></p>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <ul
+            class="nav nav-tabs custom-tabs flex-column flex-sm-row justify-content-center"
+            id="galleryTabs"
+            role="tablist"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="sushi-tab"
+                data-toggle="tab"
+                href="#sushi"
+                role="tab"
+                aria-controls="sushi"
+                aria-selected="true"
+                >Sushi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="sashimi-tab"
+                data-toggle="tab"
+                href="#sashimi"
+                role="tab"
+                aria-controls="sashimi"
+                aria-selected="false"
+                >Sashimi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="ramen-tab"
+                data-toggle="tab"
+                href="#ramen"
+                role="tab"
+                aria-controls="ramen"
+                aria-selected="false"
+                >Ramen</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tempura-tab"
+                data-toggle="tab"
+                href="#tempura"
+                role="tab"
+                aria-controls="tempura"
+                aria-selected="false"
+                >Tempura</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="desserts-tab"
+                data-toggle="tab"
+                href="#desserts"
+                role="tab"
+                aria-controls="desserts"
+                aria-selected="false"
+                >Desserts</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="beverages-tab"
+                data-toggle="tab"
+                href="#beverages"
+                role="tab"
+                aria-controls="beverages"
+                aria-selected="false"
+                >Beverages</a
+              >
+            </li>
           </ul>
 
           <div class="tab-content mt-3" id="galleryTabContent">
-
-              <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-
-                  <div class="row">
-
-                      <div class="col-lg-6 menu-item filter-all">
-
-                          <div class="menu-content">
-
-                              <a href="#">Signature MSC Cocktail</a><span>$12</span>
-
-                          </div>
-
-                          <div class="menu-ingredients">
-
-                            A refreshing blend of citrus, herbs, and premium spirits
-
-                          </div>
-
-                      </div>
-
-                      <div class="col-lg-6 menu-item filter-all">
-
-                          <div class="menu-content">
-
-                              <a href="#">Truffle Mushroom Risotto</a><span>$16</span>
-
-                          </div>
-
-                          <div class="menu-ingredients">
-
-                            Creamy Arborio rice with black truffle and Parmesan
-
-                          </div>
-
-                      </div>
-
-                      <div class="col-lg-6 menu-item filter-all">
-
-                          <div class="menu-content">
-
-                              <a href="#">Seared Wagyu Steak</a><span>$35</span>
-
-                          </div>
-
-                          <div class="menu-ingredients">
-
-                            Premium Wagyu beef with truffle mashed potatoes and red wine reduction
-
-                          </div>
-
-                      </div>
-
+            <!-- SUSHI TAB -->
+            <div
+              class="tab-pane fade show active"
+              id="sushi"
+              role="tabpanel"
+              aria-labelledby="sushi-tab"
+            >
+              <div class="row">
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Salmon Nigiri</a><span>$5/ 2pcs</span>
                   </div>
-
-              </div>
-
-              <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
-
-                  <div class="row">
-
-                      <div class="col-lg-6 menu-item filter-beverages">
-
-                          <div class="menu-content">
-
-                              <a href="#">Signature MSC Cocktail</a><span>$12</span>
-
-                          </div>
-
-                          <div class="menu-ingredients">
-
-                            A refreshing blend of citrus, herbs, and premium spirits.
-
-                          </div>
-
-                      </div>
-
+                  <div class="menu-ingredients">
+                    Hand-pressed vinegared rice topped with fresh salmon
                   </div>
-
-              </div>
-
-              <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
-
-                  <div class="row">
-
-                      <div class="col-lg-6 menu-item filter-lunch">
-
-                          <div class="menu-content">
-
-                              <a href="#">Truffle Mushroom Risotto</a><span>$16</span>
-
-                          </div>
-
-                          <div class="menu-ingredients">
-
-                            Creamy Arborio rice with black truffle and Parmesan.
-
-                          </div>
-
-                      </div>
-
+                </div>
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Spicy Tuna Roll</a><span>$12/ 6pcs</span>
                   </div>
-
-              </div>
-
-              <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
-
-                  <div class="row">
-
-                      <div class="col-lg-6 menu-item filter-dinner">
-
-                          <div class="menu-content">
-
-                              <a href="#">Seared Wagyu Steak</a><span>$35</span>
-
-                          </div>
-
-                          <div class="menu-ingredients">
-
-                            Premium Wagyu beef with truffle mashed potatoes and red wine reduction
-                          </div>
-
-                      </div>
-
-
+                  <div class="menu-ingredients">
+                    Seaweed-wrapped roll with tuna, spicy mayo, and cucumber
                   </div>
-
+                </div>
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">California Roll</a><span>$10/ 6pcs</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Crab, avocado, and cucumber with sesame seeds
+                  </div>
+                </div>
               </div>
-
-
-          </div>
-
-      </div>
-
-    </section>
-
-
-    </div>
-
-    </section>
- <!-- ======= Book A Table Section ======= --> 
-
- <section id="book-a-table" class="book-a-table"> 
-
-  <div class="container" data-aos="fade-up"> 
-
-    <div class="section-title"> 
-
-      <h3>Reservation</h3> 
-
-      <p>Book a Table</p> 
-
-    </div> 
-
-    <form class="php-email-form" role="form"> 
-
-      <div class="row"> 
-
-        <div class="col-lg-4 col-md-6 form-group"> 
-
-          <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" 
-
-            data-msg="Please enter at least 4 chars" required> 
-
-          <div class="validate"></div> 
-
-        </div> 
-
-        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0"> 
-
-          <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" 
-
-            data-msg="Please enter a valid email" required> 
-
-          <div class="validate"></div> 
-
-        </div> 
-
-        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0"> 
-
-          <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" data-rule="minlen:4" 
-
-            data-msg="Please enter at least 4 chars" required> 
-
-          <div class="validate"></div> 
-
-        </div> 
-
-        <div class="col-lg-4 col-md-6 form-group mt-3"> 
-
-          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" 
-
-            data-msg="Please enter at least 4 chars" required> 
-
-          <div class="validate"></div> 
-
-        </div> 
-
-        <div class="col-lg-4 col-md-6 form-group mt-3"> 
-
-          <input type="time" class="form-control" name="time" id="time" required> 
-
-          <small class="form-text text-muted">Please enter the time of your visit.</small> 
-
-        </div> 
-
-        <div class="col-lg-4 col-md-6 form-group mt-3"> 
-
-          <input type="number" class="form-control" name="people" id="people" placeholder="No. of people" 
-
-            data-rule="minlen:1" data-msg="Please enter at least 1 chars" required> 
-
-          <div class="validate"></div> 
-
-        </div> 
-
-      </div> 
-
-      <div class="form-group mt-3"> 
-
-        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea> 
-
-        <div class="validate"></div> 
-
-      </div> 
-
-      <div class="text-center"><button type="submit" 
-
-          onclick="showAlert('Reservation has been successfully booked!')">Book a Table</button> 
-
-      </div> 
-
-    </form> 
-
-  </div> 
-
-</section> 
-
- <!-- ======= Gallery Section ======= -->
- <section id="gallery" class="gallery">
-
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h3>Gallery</h3>
-      <p>Some photos from Our Restaurant</p>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <ul class="nav nav-tabs custom-tabs" id="galleryTabs" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food"
-          aria-selected="true">Food</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="ambience-tab" data-toggle="tab" href="#ambience" role="tab" aria-controls="ambience"
-          aria-selected="false">Ambience</a>
-      </li>
-    </ul>
-
-    <div class="tab-content mt-3" id="galleryTabContent">
-      <div class="tab-pane fade show active" id="food" role="tabpanel" aria-labelledby="food-tab">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="/assets/vendor/picture/food1.png" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="/assets/vendor/picture/food2.png" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="/assets/vendor/picture/food3.png" class="img-fluid">
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-          <div class="col-md-4">
-            <img src="/assets/vendor/picture/food4.png" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="/assets/vendor/picture/food5.png" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="/assets/vendor/picture/food6 (6).png" class="img-fluid">
-          </div>
-        </div>
-      </div>
-
-
-      <div class="tab-pane fade" id="ambience" role="tabpanel" aria-labelledby="ambience-tab">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="" class="img-fluid">
-          </div>
-
-          <div class="col-md-4">
-            <img src="" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="" class="img-fluid">
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-          <div class="col-md-4">
-            <img src="" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="" class="img-fluid">
-          </div>
-          <div class="col-md-4">
-            <img src="" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<!-- End Book A Gallery Section -->
- <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h3>Contact</h3>
-          <p>Contact Us</p>
-        </div>
-      </div>
-
-      <div data-aos="fade-up">
-        <!-- Insert the URL of the restaurant's location that you prefer. -->
-        <iframe style="border:0; width: 100%; height: 350px;"
-          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6641.6162694677!2d-117.99591!3d33.662133!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1692763637266!5m2!1sen!2sus"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt-fill"></i>
-                <h4>Location:</h4>
-                <p>Insert the location of the restaurant's location that you prefer.</p>
-              </div>
-
-              <div class="open-hours">
-                <i class="bi bi-clock-fill"></i>
-                <h4>Open Hours:</h4>
-                <p>
-                  Monday - Sunday:<br>
-                  9:00 AM - 11:00 PM
-                </p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope-at-fill"></i>
-                <h4>Email:</h4>
-                <p>[Email Id]</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-telephone-inbound-fill"></i>
-                <h4>Phone:</h4>
-                <p>[Phone Number]</p>
-              </div>
-
             </div>
 
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form class="php-email-form">
+            <!-- SASHIMI TAB -->
+            <div
+              class="tab-pane fade"
+              id="sashimi"
+              role="tabpanel"
+              aria-labelledby="sashimi-tab"
+            >
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Salmon Sashimi</a><span>$15/ 5 slices</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Fresh raw salmon served with wasabi and soy sauce
+                  </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Tuna Sashimi</a><span>$18/ 5 slices</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Premium fatty tuna (toro) sliced thinly
+                  </div>
                 </div>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-              </div>
+            </div>
 
-              <div class="text-center"><button type="submit" onclick="showAlert('Thank you for contacting us!')">Send
-                  Message</button></div>
-            </form>
+            <!-- RAMEN TAB -->
+            <div
+              class="tab-pane fade"
+              id="ramen"
+              role="tabpanel"
+              aria-labelledby="ramen-tab"
+            >
+              <div class="row">
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Tonkotsu Ramen</a><span>$12</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Rich pork bone broth with chashu pork, soft-boiled egg, and
+                    noodles
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Miso Ramen</a><span>$11</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Savory miso broth with corn, bamboo shoots, and bean sprouts
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- TEMPURA TAB -->
+            <div
+              class="tab-pane fade"
+              id="tempura"
+              role="tabpanel"
+              aria-labelledby="tempura-tab"
+            >
+              <div class="row">
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Prawn Tempura</a><span>$9/ 3pcs</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Lightly battered and deep-fried jumbo shrimp
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Vegetable Tempura</a><span>$7</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Assorted seasonal vegetables fried in crispy batter
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="desserts"
+              role="tabpanel"
+              aria-labelledby="desserts-tab"
+            >
+              <div class="row">
+                <!-- Matcha Ice Cream -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Matcha Ice Cream</a><span>$5</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Premium green tea ice cream with red bean paste
+                  </div>
+                </div>
+
+                <!-- Mochi -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Mochi Platter</a><span>$8/ 4pcs</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Soft rice cakes with fillings (green tea, strawberry, mango)
+                  </div>
+                </div>
+
+                <!-- Dorayaki -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Dorayaki</a><span>$6</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Japanese pancake sandwich with sweet red bean paste
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="beverages"
+              role="tabpanel"
+              aria-labelledby="beverages-tab"
+            >
+              <div class="row">
+                <!-- Matcha Latte -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Matcha Latte</a><span>$4.5</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Traditional green tea powder with steamed milk
+                  </div>
+                </div>
+
+                <!-- Sake -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Junmai Sake</a><span>$8/ glass</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Premium rice wine (served warm or cold)
+                  </div>
+                </div>
+
+                <!-- Yuzu Tea -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Yuzu Tea</a><span>$3.5</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Refreshing citrus tea with honey
+                  </div>
+                </div>
+
+                <!-- Ramune -->
+                <div class="col-lg-6 menu-item filter-all">
+                  <div class="menu-content">
+                    <a href="#">Ramune Soda</a><span>$3</span>
+                  </div>
+                  <div class="menu-ingredients">
+                    Japanese marble soda (original/lychee/strawberry flavor)
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
+      </section>
 
-      </div>
-    </section><!-- End Contact Section -->
+      <section id="book-a-table" class="book-a-table">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3>Reservation</h3>
+            <p>Book a Table</p>
+          </div>
+          <form class="php-email-form" role="form">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                  required
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  data-rule="email"
+                  data-msg="Please enter a valid email"
+                  required
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                  required
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input
+                  type="date"
+                  name="date"
+                  class="form-control"
+                  id="date"
+                  placeholder="Date"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                  required
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input
+                  type="time"
+                  class="form-control"
+                  name="time"
+                  id="time"
+                  required
+                />
+                <small class="form-text text-muted"
+                  >Please enter the time of your visit.</small
+                >
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="people"
+                  id="people"
+                  placeholder="No. of people"
+                  data-rule="minlen:1"
+                  data-msg="Please enter at least 1 chars"
+                  required
+                />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                onclick="showAlert('Reservation has been successfully booked!')"
+              >
+                Book a Table
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3>Gallery</h3>
+            <p>Some photos from Our Restaurant</p>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <ul class="nav nav-tabs custom-tabs" id="galleryTabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="food-tab"
+                data-toggle="tab"
+                href="#food"
+                role="tab"
+                aria-controls="food"
+                aria-selected="true"
+                >Food</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="drink-tab"
+                data-toggle="tab"
+                href="#drink"
+                role="tab"
+                aria-controls="drink"
+                aria-selected="false"
+                >Drink</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="galleryTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="food"
+              role="tabpanel"
+              aria-labelledby="food-tab"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="/assets/image/sushi.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/fish.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/ramen.jpg" class="img-fluid" />
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="/assets/image/takoyaki.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/unagi.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/tonkatsu.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="drink"
+              role="tabpanel"
+              aria-labelledby="drink-tab"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="/assets/image/capuccino.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/matcha.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="/assets/image/sakura_cocktail.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="/assets/image/sake_mojito.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/sake_mojito.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="/assets/image/matcha.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3>Contact</h3>
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <iframe
+            style="border: 0; width: 100%; height: 350px"
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6641.6162694677!2d-117.99591!3d33.662133!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1692763637266!5m2!1sen!2sus"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <h4>Location:</h4>
+                  <p>
+                    Insert the location of the restaurant's location that you
+                    prefer.
+                  </p>
+                </div>
+                <div class="open-hours">
+                  <i class="bi bi-clock-fill"></i>
+                  <h4>Open Hours:</h4>
+                  <p>Monday - Sunday:<br />9:00 AM - 11:00 PM</p>
+                </div>
+                <div class="email">
+                  <i class="bi bi-envelope-at-fill"></i>
+                  <h4>Email:</h4>
+                  <p>[Email Id]</p>
+                </div>
+                <div class="phone">
+                  <i class="bi bi-telephone-inbound-fill"></i>
+                  <h4>Phone:</h4>
+                  <p>[Phone Number]</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="8"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    onclick="showAlert('Thank you for contacting us!')"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- ======= Footer ======= --> 
-  <footer id="footer"> 
-    <div class="footer-top"> 
-      <div class="container"> 
-        <div class="row"> 
-          <div class="col-lg-6 col-md-6"> 
-            <div class="footer-info"> 
-              <h2>Sizzle</h2> 
-              <div class="social-links mt-3"> 
-                <a href="#"> <i class="bi bi-twitter"></i></a> 
-                <a href="#"><i class="bi bi-facebook"></i></a> 
-                <a href="#"><i class="bi bi-instagram"></i></a> 
-                <a href="#"><i class="bi bi-youtube"></i></a> 
-              </div> 
-            </div> 
-          </div> 
-          <div class="col-lg-6 col-md-6 footer-links"> 
-            <h5>Useful Links</h5> 
-            <ul> 
-              <li> <a href="#hero">Home</a></li> 
-              <li> <a href="#about">About us</a></li> 
-              <li> <a href="#contact">Contact</a></li> 
-            </ul> 
-          </div> 
-        </div> 
-      </div> 
-    </div> 
-  </footer> 
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="footer-info">
+                <h2>Sizzle</h2>
+                <div class="social-links mt-3">
+                  <a href="#"> <i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 footer-links">
+              <h5>Useful Links</h5>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

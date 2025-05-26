@@ -1,0 +1,148 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('../../assets/image/background.jpg') center center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: -120px;
+}
+.visible {
+  opacity: 1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.heroContainer {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.heroContent {
+  text-align: right;
+  color: white;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  animation: fadeInDown 1s both;
+}
+
+.hero h1 span {
+  color: #76abae;
+}
+
+.subtitle {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+  animation: fadeInUp 1s both 0.3s;
+}
+
+.btns {
+  margin-top: 30px;
+  animation: fadeInUp 1s both 0.6s;
+}
+
+.btnMenu,
+.btnBook {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #76abae;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btnMenu:hover,
+.btnBook:hover {
+  background: #76abae;
+  color: #fff;
+}
+
+.btnBook {
+  margin-left: 15px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .heroContainer {
+    padding-top: 98px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .heroContent {
+    text-align: center;
+  }
+  
+  .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btnBook {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

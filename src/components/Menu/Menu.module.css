@@ -1,0 +1,106 @@
+.menu {
+  padding: 60px 0;
+  overflow: hidden;
+  background-color: #222831;
+}
+
+.sectionTitle {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.sectionTitle h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.sectionTitle p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #76abae;
+}
+
+.sectionTitle span {
+  color: #76abae;
+}
+
+.customTabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #76abae;
+}
+
+.tabButton {
+  padding: 8px 20px;
+  border: 2px solid #76abae;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tabButton:hover {
+  background: rgba(118, 171, 174, 0.1);
+}
+
+.tabButtonActive {
+  background: #76abae;
+  color: white;
+}
+
+.menuItem {
+  margin-bottom: 30px;
+}
+
+.menuContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.menuContent a {
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.menuContent a:hover {
+  color: #76abae;
+}
+
+.menuContent span {
+  font-weight: 600;
+  color: #76abae;
+}
+
+.menuIngredients {
+  font-style: italic;
+  font-size: 14px;
+  color: #969592;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sectionTitle p {
+    font-size: 28px;
+  }
+
+  .menuContent {
+    flex-direction: column;
+  }
+
+  .menuContent span {
+    margin-top: 5px;
+  }
+}

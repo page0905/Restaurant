@@ -1,0 +1,135 @@
+.booking {
+  padding: 60px 0;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.sectionTitle {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.sectionTitle h3 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.sectionTitle p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #76abae;
+}
+
+.bookingForm {
+  width: 100%;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  color: #76abae;
+  z-index: 10;
+}
+
+.formControl {
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: none;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 12px 15px 12px 40px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+textarea.formControl{
+  min-height: 100px !important;
+  resize: vertical;
+}
+
+.formControl:focus {
+  border-color: #76abae;
+  outline: none;
+}
+
+.formControl::placeholder {
+  color: #999;
+}
+
+.formText {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #6c757d;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.submitButton {
+  background: #76abae;
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background: #5d8b8e;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .sectionTitle p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle p {
+    font-size: 28px;
+  }
+  
+  .formControl {
+    padding: 10px 15px 10px 35px;
+  }
+  
+  .inputIcon {
+    font-size: 16px;
+    left: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bookTable {
+    padding: 40px 0;
+  }
+  
+  .submitButton {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+}
