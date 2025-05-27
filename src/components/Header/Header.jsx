@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +32,7 @@ const Header = () => {
       }
     }
 
-    window.location.href = fallbackPath;
+    navigate(fallbackPath);
     setMobileMenuOpen(false);
   };
 
