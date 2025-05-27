@@ -18,10 +18,7 @@ const Header = () => {
   }, []);
 
   const handleNavigation = (id, fallbackPath) => {
-    if (
-      location.pathname === import.meta.env.BASE_URL ||
-      location.pathname === "/"
-    ) {
+    if (location.pathname === "/" || location.pathname === "/Restaurant") {
       const element = document.getElementById(id);
       if (element) {
         const headerHeight = document.getElementById("header").offsetHeight;
@@ -40,11 +37,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { id: "hero", path: "", label: "Home" },
-    { id: "about", path: "about", label: "About" },
-    { id: "menu", path: "menu", label: "Menu" },
-    { id: "gallery", path: "gallery", label: "Gallery" },
-    { id: "contact", path: "contact", label: "Contact" },
+    { id: "hero", path: "/", label: "Home" },
+    { id: "about", path: "/about", label: "About" },
+    { id: "menu", path: "/menu", label: "Menu" },
+    { id: "gallery", path: "/gallery", label: "Gallery" },
+    { id: "contact", path: "/contact", label: "Contact" },
   ];
 
   const isActive = (path) => {
