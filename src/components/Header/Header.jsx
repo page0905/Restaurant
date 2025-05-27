@@ -40,12 +40,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { id: "hero", path: "/", label: "Home" },
-    { id: "about", path: "/about", label: "About" },
-    { id: "menu", path: "/menu", label: "Menu" },
-
-    { id: "gallery", path: "/gallery", label: "Gallery" },
-    { id: "contact", path: "/contact", label: "Contact" },
+    { id: "hero", path: "", label: "Home" },
+    { id: "about", path: "about", label: "About" },
+    { id: "menu", path: "menu", label: "Menu" },
+    { id: "gallery", path: "gallery", label: "Gallery" },
+    { id: "contact", path: "contact", label: "Contact" },
   ];
 
   const isActive = (path) => {
