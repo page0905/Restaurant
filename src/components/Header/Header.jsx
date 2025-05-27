@@ -18,7 +18,10 @@ const Header = () => {
   }, []);
 
   const handleNavigation = (id, fallbackPath) => {
-    if (location.pathname === "/") {
+    if (
+      location.pathname === import.meta.env.BASE_URL ||
+      location.pathname === "/"
+    ) {
       const element = document.getElementById(id);
       if (element) {
         const headerHeight = document.getElementById("header").offsetHeight;
