@@ -23,7 +23,7 @@ const Menu = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:3001/menuItems?category=${category}`
+        `${process.env.REACT_APP_API_BASE_URL}/menuItems?category=${category}`
       );
       const data = await response.json();
       setMenuItems(data);
