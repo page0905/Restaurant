@@ -5,8 +5,7 @@
   "homepage": "https://page0905.github.io/Restaurant/",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start\"",
-    "start": "react-scripts start",
-    "server": "node server.js",
+    "start": "node server.js",
     "build": "react-scripts build",
     "preview": "serve -s build",
     "predeploy": "npm run build",
