@@ -1,6 +1,7 @@
 {
   "name": "restaurant",
   "version": "1.0.0",
+  "main": "server.js",
   "homepage": "https://page0905.github.io/Restaurant/",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start\"",
