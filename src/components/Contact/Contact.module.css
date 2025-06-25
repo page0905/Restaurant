@@ -1,6 +1,6 @@
 .contact {
   padding: 60px 20px;
-  background-color: #222831;
+  background-color: var(--secondary);
   color: white;
 }
 
@@ -11,7 +11,7 @@
 
 .sectionTitle h3 {
   font-size: 16px;
-  color: #aaaaaa;
+  color: var(--text-muted);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -19,7 +19,7 @@
 .sectionTitle p {
   font-size: 32px;
   font-weight: bold;
-  color: #76abae;
+  color: var(--primary);
 }
 
 .mapWrapper {
@@ -56,7 +56,7 @@
 
 .infoIcon {
   font-size: 24px;
-  color: #76abae;
+  color: var(--primary);
   flex-shrink: 0;
 }
 
@@ -96,7 +96,7 @@ textarea.formControl {
 }
 
 .submitButton {
-  background-color: #76abae;
+  background-color: var(--primary);
   color: white;
   border: none;
   padding: 12px 30px;

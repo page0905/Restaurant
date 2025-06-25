@@ -12,7 +12,7 @@ const Footer = () => {
         <div className={`${styles.footerTop} container`}>
           <div className="row">
             {/* Left Column - Useful Links */}
-            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+            <div className="col-6 col-md-6 d-flex justify-content-center justify-content-md-start">
               <div className={styles.footerLinks}>
                 <h4>Useful Links</h4>
                 <ul>
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
 
             {/* Right Column - Social Links */}
-            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center mb-4 mb-md-0">
+            <div className="col-6 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center mb-4 mb-md-0">
               <div className={styles.socialLinks}>
                 <a
                   href="https://twitter.com"

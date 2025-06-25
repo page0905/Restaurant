@@ -1,13 +1,11 @@
 /* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Global Variables */
 :root {
   --primary-color: #76abae;
   --secondary-color: #222831;
-  --dark-color: #1a1814;
   --light-color: #ffffff;
-  --text-color: #eeeeee;
   --text-muted: #aaaaaa;
   --section-padding: 60px;
 }
@@ -24,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--secondary-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -127,13 +125,17 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5d8b8e;
+  background: var(--primary-dark);
 }
 
 /* Animation Keyframes */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
@@ -148,9 +150,15 @@ section {
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Preloader Styles */
@@ -236,8 +244,8 @@ section {
 }
 
 .btn-primary:hover {
-  background-color: #5d8b8e;
-  border-color: #5d8b8e;
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 /* Responsive Adjustments */
@@ -251,7 +259,7 @@ section {
   :root {
     --section-padding: 40px;
   }
-  
+
   .section-title p {
     font-size: 30px;
   }
@@ -261,7 +269,7 @@ section {
   :root {
     --section-padding: 30px;
   }
-  
+
   .section-title p {
     font-size: 26px;
   }

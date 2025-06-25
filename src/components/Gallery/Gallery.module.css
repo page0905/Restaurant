@@ -1,11 +1,10 @@
 .gallery {
   padding: 60px 0;
   overflow: hidden;
-  background-color: #222831;
+  background-color: var(--secondary);
 }
 
 .sectionTitle {
-  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -17,50 +16,74 @@
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: var(--text-muted);
 }
 
 .sectionTitle p {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  color: #76abae;
+  color: var(--primary);
 }
 
-/* Tabs container */
+/* Tabs container with frosted background */
 .tabsContainer {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  border-bottom: 1px solid #76abae;
+  backdrop-filter: blur(6px);
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.05);
 }
 
+/* Buttons */
 .tabButton {
-  padding: 8px 20px;
-  border: 2px solid #76abae;
-  border-radius: 35px;
-  background-color: transparent;
-  color: #aaa;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background: transparent;
+  color: var(--text-muted);
   font-weight: 500;
-  transition: all 0.3s;
-  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+}
+
+.tabButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 0;
+}
+
+.tabButton:hover::before {
+  opacity: 0.15;
+}
+
+.tabButton span {
+  position: relative;
+  z-index: 1;
 }
 
 .tabButton:hover {
-  border-color: #76abae;
-  background-color: rgba(118, 171, 174, 0.1);
+  color: var(--primary);
 }
 
 .tabButtonActive {
-  background-color: #76abae;
   color: white;
-  border-color: #76abae;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 0 15px var(--primary);
+  border-color: transparent;
 }
 
-
-/* Gallery image style */
+/* Gallery image */
 .galleryImage {
   border-radius: 10px;
   margin-top: 15px;
@@ -73,16 +96,13 @@
 }
 
 .galleryImage:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.05);
 }
 
-/* Responsive */
+/* Responsive tweaks */
 @media (max-width: 992px) {
-  .customTabs {
-    margin-top: 0;
-  }
-
   .galleryImage {
     height: 200px !important;
   }
@@ -103,8 +123,8 @@
     height: 150px !important;
   }
 
-  .customTabs :global(.nav-link) {
-    padding: 6px 15px;
+  .tabButton {
+    padding: 8px 18px;
     font-size: 14px;
   }
 }

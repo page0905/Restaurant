@@ -5,7 +5,7 @@
 }
 
 .sectionTitle {
-  padding-bottom: 40px;
+  padding: 40px;
   text-align: center;
 }
 
@@ -17,14 +17,14 @@
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: var(--text-muted);
 }
 
 .sectionTitle p {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  color: #76abae;
+  color: var(--primary);
 }
 
 .bookingForm {
@@ -41,7 +41,7 @@
   position: absolute;
   left: 15px;
   font-size: 18px;
-  color: #76abae;
+  color: var(--primary);
   z-index: 10;
 }
 
@@ -50,7 +50,7 @@
   border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
-  background: #ffffff;
+  background: var(--light);
   border: 1px solid #ddd;
   color: #333;
   padding: 12px 15px 12px 40px;
@@ -58,13 +58,13 @@
   transition: border-color 0.3s;
 }
 
-textarea.formControl{
+textarea.formControl {
   min-height: 100px !important;
   resize: vertical;
 }
 
 .formControl:focus {
-  border-color: #76abae;
+  border-color: var(--primary);
   outline: none;
 }
 
@@ -82,7 +82,7 @@ textarea.formControl{
 }
 
 .submitButton {
-  background: #76abae;
+  background: var(--primary);
   border: 0;
   padding: 12px 40px;
   color: #fff;
@@ -94,7 +94,7 @@ textarea.formControl{
 }
 
 .submitButton:hover {
-  background: #5d8b8e;
+  background: var(--primary-dark);
 }
 
 .textCenter {
@@ -112,11 +112,11 @@ textarea.formControl{
   .sectionTitle p {
     font-size: 28px;
   }
-  
+
   .formControl {
     padding: 10px 15px 10px 35px;
   }
-  
+
   .inputIcon {
     font-size: 16px;
     left: 12px;
@@ -127,7 +127,7 @@ textarea.formControl{
   .bookTable {
     padding: 40px 0;
   }
-  
+
   .submitButton {
     padding: 10px 30px;
     font-size: 14px;

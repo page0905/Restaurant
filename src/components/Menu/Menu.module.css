@@ -1,11 +1,10 @@
 .menu {
   padding: 60px 0;
   overflow: hidden;
-  background-color: #222831;
+  background-color: var(--secondary);
 }
 
 .sectionTitle {
-  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -15,48 +14,78 @@
   margin-bottom: 5px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: var(--text-muted);
 }
 
 .sectionTitle p {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  color: #76abae;
+  color: var(--primary);
 }
 
 .sectionTitle span {
-  color: #76abae;
+  color: var(--primary);
 }
 
 .customTabs {
   display: flex;
   justify-content: center;
-  gap: 10px;
   flex-wrap: wrap;
-  border-bottom: 1px solid #76abae;
+  gap: 12px;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tabButton {
-  padding: 8px 20px;
-  border: 2px solid #76abae;
-  border-radius: 50px;
-  background-color: transparent;
-  color: #aaa;
-  font-size: 14px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background: transparent;
+  color: var(--text-muted);
   font-weight: 500;
-  transition: all 0.3s;
+  font-size: 16px;
   cursor: pointer;
-  white-space: nowrap;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.tabButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.tabButton:hover::before {
+  opacity: 0.15;
+}
+
+.tabButton span {
+  position: relative;
+  z-index: 1;
 }
 
 .tabButton:hover {
-  background: rgba(118, 171, 174, 0.1);
+  color: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
 }
 
 .tabButtonActive {
-  background: #76abae;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   color: white;
+  border: none;
+  box-shadow: 0 0 15px var(--primary);
 }
 
 .menuItem {
@@ -76,18 +105,69 @@
 }
 
 .menuContent a:hover {
-  color: #76abae;
+  color: var(--primary);
 }
 
 .menuContent span {
   font-weight: 600;
-  color: #76abae;
+  color: var(--primary);
+}
+
+.menuCard {
+  display: flex;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 16px;
+  align-items: flex-start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.menuCard:hover {
+  transform: translateY(-3px);
+}
+
+.menuImage img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+}
+
+.menuContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menuTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.menuTitle a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuTitle span {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 15px;
 }
 
 .menuIngredients {
-  font-style: italic;
   font-size: 14px;
-  color: #969592;
+  font-style: italic;
+  color: #bbb;
+  line-height: 1.5;
 }
 
 /* Responsive */
@@ -102,5 +182,49 @@
 
   .menuContent span {
     margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .tabButton {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .customTabs {
+    gap: 8px;
+  }
+
+  .menuCard {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .menuImage img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    border-radius: 10px;
+  }
+
+  .menuTitle a {
+    font-size: 14px;
+  }
+
+  .menuIngredients {
+    font-size: 12px;
+  }
+
+  .customTabs {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .tabButton {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 120px;
+    font-size: 14px;
+    padding: 10px 12px;
+    text-align: center;
   }
 }

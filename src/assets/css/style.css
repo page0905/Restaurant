@@ -1,16 +1,13 @@
 /*Font Import & Base Reset */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /* Color Variables */
   --primary: #76abae;
   --primary-dark: #5d8b8e;
   --secondary: #222831;
-  --dark: #1a1814;
   --light: #ffffff;
-  --text: #eeeeee;
   --text-muted: #aaaaaa;
-  --bg-color: #222831;
   --border-radius: 8px;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -26,31 +23,48 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondary);
   color: var(--text);
   line-height: 1.6;
   font-size: 1.6rem;
-  overflow-x: hidden;
+  padding-top: 80px;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
-h1 { font-size: 4.8rem; }
-h2 { font-size: 3.6rem; }
-h3 { font-size: 2.8rem; }
-h4 { font-size: 2.4rem; }
-h5 { font-size: 2.0rem; }
-h6 { font-size: 1.8rem; }
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
 
 p {
   margin-bottom: 1.5rem;
@@ -74,11 +88,31 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (min-width: 576px) { .container { max-width: 540px; } }
-@media (min-width: 768px) { .container { max-width: 720px; } }
-@media (min-width: 992px) { .container { max-width: 960px; } }
-@media (min-width: 1200px) { .container { max-width: 1140px; } }
-@media (min-width: 1400px) { .container { max-width: 1320px; } }
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 
 .section {
   padding: 8rem 0;
@@ -98,7 +132,7 @@ a:hover {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 2px;
@@ -146,26 +180,44 @@ button {
 }
 
 /* Utility Classes */
-.text-center { text-align: center; }
-.text-primary { color: var(--primary); }
-.bg-primary { background-color: var(--primary); }
-.mt-1 { margin-top: 1rem; }
-.mt-2 { margin-top: 2rem; }
-.mb-1 { margin-bottom: 1rem; }
-.mb-2 { margin-bottom: 2rem; }
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--primary);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { 
+  from {
     opacity: 0;
     transform: translateY(50px);
   }
-  to { 
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -199,19 +251,33 @@ button {
 
 /* 10. Responsive Adjustments */
 @media (max-width: 992px) {
-  html { font-size: 58%; }
-  .section { padding: 6rem 0; }
+  html {
+    font-size: 58%;
+  }
+  .section {
+    padding: 6rem 0;
+  }
 }
 
 @media (max-width: 768px) {
-  html { font-size: 55%; }
-  h1 { font-size: 3.6rem; }
-  h2 { font-size: 3rem; }
-  .section-title h2 { font-size: 3rem; }
+  html {
+    font-size: 55%;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .section-title h2 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 576px) {
-  .section { padding: 5rem 0; }
+  .section {
+    padding: 5rem 0;
+  }
   .btn {
     padding: 1rem 2rem;
     font-size: 1.4rem;

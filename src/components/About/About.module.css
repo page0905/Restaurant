@@ -11,21 +11,21 @@
 .sectionTitle h3 {
   font-size: 14px;
   font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
+  margin-bottom: 5px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: var(--text-muted);
+  line-height: 1;
 }
 
 .sectionTitle p {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  color: #76abae;
+  color: var(--primary);
 }
 
+/* Shared Image Style */
 .aboutImg {
   min-height: 350px;
   background-size: cover;
@@ -51,11 +51,13 @@
   margin: 0;
 }
 
+/* Text Content Block */
 .contentBlock {
-  background-color: #76abae;
+  background-color: var(--primary);
   color: white;
   border-radius: 10px;
   padding: 20px;
+  height: 100%;
 }
 
 .contentText p {
@@ -70,29 +72,45 @@
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+  .desktopOnly {
+    display: block;
+  }
+
+  .mobileOnly {
+    display: none;
+  }
+
   .aboutImg,
   .contentBlock {
-    min-height: 300px;
+    min-height: 350px;
   }
-  
+
   .contentText p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
-@media (max-width: 768px) {
-  .aboutImg,
-  .contentBlock {
+@media (max-width: 991.98px) {
+  .aboutImg {
     min-height: 250px;
   }
-  
+
+  .callUs h2 {
+    font-size: 20px;
+  }
+
   .sectionTitle p {
     font-size: 28px;
   }
-  
-  .callUs h2 {
-    font-size: 20px;
+
+  .contentBlock {
+    padding: 15px;
+    margin-top: 1rem;
+  }
+
+  .contentText p {
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
